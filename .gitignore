@@ -1,0 +1,4 @@
+blink.bin
+blink.elf
+main.o
+startup.o
