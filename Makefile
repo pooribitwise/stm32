@@ -33,7 +33,7 @@ clean:
 	rm -f $(BINARY) $(ELF) $(OBJECTS)
 
 flash:
-	st-flash write $(BINARY) 0x08000000
+	st-flash --reset write $(BINARY) 0x08000000
 
 erase:
-	st-flash erase
+	st-flash --reset erase
