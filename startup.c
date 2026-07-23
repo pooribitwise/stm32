@@ -36,6 +36,6 @@ void Reset_Handler(void) {
  */
 __attribute__((section(".isr_vector")))
 void (* const vector_table[])(void) = {
-	(void (*)(void))0x20002800,	// for 10KB ram we need 4 bytes to address the stack pointer
+	(void (*)(void))0x20002800,	// for 10KB ram we need to go 0x2800 further to address the stack pointer
 	Reset_Handler
 };
