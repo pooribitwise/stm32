@@ -25,6 +25,23 @@ If you use apt package manager, modify the Makefile to the corresponding package
 
 ---
 
+## Wiring
+
+Connect your bluepill to ST-Link V2:
+```text
+      ST-Link V2                 STM32 BluePill
+    +-------------+             +--------------+
+    |             |             |              |
+    |        3.3V |<----------->| 3.3V         |
+    |         GND |<----------->| GND          |
+    |       SWDIO |<----------->| SWIO (PA13)  |
+    |       SWCLK |<----------->| SWCLK (PA14) |
+    |             |             |              |
+    +-------------+             +--------------+
+```
+
+---
+
 ## Usage
 1. Clone the repo:
 ```bash
