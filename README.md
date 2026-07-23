@@ -28,7 +28,7 @@ If you use apt package manager, modify the Makefile to the corresponding package
 ## Usage
 1. Clone the repo:
 ```bash
-git clone https://github.com/pooribitwise/stm32.git
+git clone https://github.com/pooribitwise/stm32-baremetal-template.git
 ```
 2. Write your code in main.c
 3. Use make to build the binary (edit Makefile if you want to change your file names to something else)
